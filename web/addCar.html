@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新增优惠活动</title>
+<link rel="stylesheet" href="../res/css/addCar.css" type="text/css" />
+<link rel="stylesheet" href="../res/css/datepicker.css" type="text/css" />
+<script type="text/javascript" src="../res/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../res/js/datepicker.js"></script>
+<script src="../res/js/addCar.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//实例三
+	$('#date3').DatePicker({
+		flat: true,
+		date: ['2009-12-28','2010-01-23'],
+		current: '2010-01-01',
+		calendars: 3,
+		mode: 'range',
+		starts: 1
+	});
+	//实例五
+	var now3 = new Date();
+	now3.addDays(-4);
+	var now4 = new Date()
+	$('#widgetCalendar').DatePicker({
+		flat: true,
+		format: 'Y , B d',
+		date: [new Date(now3), new Date(now4)],
+		calendars: 3,
+		mode: 'range',
+		starts: 1,
+		onChange: function(formated) {
+			$('#widgetField span').get(0).innerHTML = formated.join(' — ');
+		}
+	});
+	var state = false;
+	$('#widgetField>a').bind('click', function(){
+		$('#widgetCalendar').stop().animate({height: state ? 0 : $('#widgetCalendar div.datepicker').get(0).offsetHeight}, 500);
+		state = !state;
+		return false;
+	});
+
+});
+</script>
+
+</head>
+
+<body>
+<div class="addActivity">
+<div class="goBack">
+	<a href="carOnSell.html">返回</a>
+</div>
+<div class="infoForm">
+	<form class="addAct">
+    	<div class="carBrand">
+    	<label for="actName">品牌 *</label>
+        <p style="display:inline-block;">奥迪</p>
+        </div>
+        <label for="carSeries" style="margin-left:38px;">车系 *</label>
+        <select class="carSeries" name="carSeries">
+        	<option>- 请选择 - </option>
+            <option>奥迪A8</option>
+            <option>奥迪A7</option>
+            <option>奥迪A6</option>
+            <option>奥迪A5</option>
+            <option>奥迪A4</option>
+            <option>奥迪Q3</option>
+            <option>奥迪Q5</option>
+            <option>奥迪Q7</option>
+        </select>
+        <br />
+        <label for="carModel" style="margin-left:38px;">车型 *</label>
+        <select class="carModel" name="carModel">
+        	<option>- 请选择 - </option>
+            <option>2013款2.2L手动豪华版</option>
+            <option>2013款2.2L手动豪华版</option>
+            <option>2013款2.2L手动豪华版</option>
+            <option>2013款2.2L手动豪华版</option>
+            <option>2013款2.2L手动豪华版</option>     	
+        </select>
+        <br />
+        <div class="guidePrice">
+        <label for="carGuidePrice">行情指导价 *</label>
+        <p style="display:inline-block; color:#999;">&nbsp;&nbsp;66.66万 </p><br />
+        </div>
+        <label for="carActPrice">本店优惠价 *</label>
+        <input class="carActPrice" name="carActPrice" placeholder="请输入优惠价格" /><br />
+		<p style="margin-top:15px;" >活动日期： *</p>
+        <div class="tab">
+			<div id="widget">
+				<div id="widgetField">
+					<span>YYYY , MM DD — YYYYY , MM DD</span>
+					<a href="#">Select date range</a>
+				</div>
+				<div id="widgetCalendar">
+				</div>
+			</div>
+		</div>
+    </form>
+</div>
+
+<div class="addActArrow">
+	<img src="../res/img/addActArrow.png" />
+</div>
+<div class="pagePreview">
+	<img class="phoneBack" src="../res/img/phonePreview.png"/>
+	<iframe frameborder="0">
+    </iframe>
+</div>
+<div class="clr">
+</div>
+<div class="saveExit">
+	<a href="#" class="save">保存</a>
+    <a href="#" class="exit">预览</a>
+</div>
+
+</div>
+</body>
+</html>
