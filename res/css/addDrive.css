@@ -117,7 +117,7 @@ input.inputDate{border:1px solid #999;padding:4px;border-bottom-color:#ddd;borde
 .saveExit{
 	float:left;
 	position:relative;
-	bottom:260px;
+	bottom:250px;
 	margin-left:20px;
 	width:420px;
 }
@@ -154,6 +154,7 @@ input.inputDate{border:1px solid #999;padding:4px;border-bottom-color:#ddd;borde
 
 .carBrand{
 	margin-left:40px;
+	margin-bottom:10px;
 }
 .carBrand p{
 	margin-left:10px;
@@ -162,6 +163,7 @@ input.inputDate{border:1px solid #999;padding:4px;border-bottom-color:#ddd;borde
 
 .carSeries{
 	margin-top:10px;
+	margin-bottom:10px;
 	width:160px;
 	height:20px;
 	font-family:"微软雅黑";
