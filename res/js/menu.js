@@ -169,6 +169,7 @@ function subclick(o,links,style2,style3,state){
 		temp1=o.index;		
 	    addClass(o,style2);	
 	}
+	
 }
 
 //缓冲显示
