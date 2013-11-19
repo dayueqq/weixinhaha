@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+.activityContanor{
+	width:780px;
+	height:500px;
+	margin:15px 10px 0 10px;
+	padding:0;
+	border:solid 1px #CCCCCC;
+	border-radius:5px;
+	list-style:none;
+	background:#f9f9f9; 
+	display:block;
+}
+
+.activityContanor li{
+	width:230px;
+	height:210px;
+	margin:20px 0 0 20px;
+	position:relative;
+	float:left;
+}
+
+.actAdded{
+	width:230px;
+	height:210px;
+	background:#FFF;
+	border:solid 1px #CCCCCC;
+	border-radius:5px;
+}
+
+.addAct{
+	display:block;
+	width:230px;
+	height:210px;
+	background:url(../img/addAct.png);
+}
+
+.addAct:hover{
+	background:url(../img/addActHover.png);
+}
+
+.actCar{
+	width:210px;
+	height:130px;
+	margin:10px 10px 0 10px;
+}
+
+.mengban{
+	position:absolute;
+	z-index:9999;
+	top:110px;
+	left:10px;
+	background:#000;
+	opacity:0.77;
+	width:210px;
+	height:30px;
+}
+
+.mengban p {
+	line-height:10px;
+	font-size:13px;
+	color:#FFF;
+	font-family:"微软雅黑";
+	margin-left:10px;
+	font-weight:bold;
+}
+
+.actDescribe{
+	border-top:solid 1px #CCCCCC;
+	margin-top:10px;
+}
+.actDescribe p{
+	margin:10px 10px 0 10px;
+	font-size:12px;
+	color:#000;
+	font-weight:400;
+	font-family:"微软雅黑";
+	overflow:hidden;
+	line-height:16px;
+}
+
+.opacityLayer 
+{	
+	margin-top:0px;
+	font-size:14px;
+	color:white;
+	text-decoration:none;
+	display:block;	
+	overflow:hidden;
+}
+
+.operate .opacityLayer
+{   
+	background:url(../img/6.png) repeat-y;
+	width:230px;
+	height:210px;
+	position:absolute;
+	z-index:10000;
+	border-radius:5px;
+	display:block;
+}
+.innerCase{
+	width:230px;
+	height:75px;
+}
+.actModify{
+	width:55px;
+	height:53px;
+	background:url(../img/actModify.png);
+	margin-left:40px;
+	position:relative;
+	float:left;
+}
+.actDelete{
+	width:55px;
+	height:53px;
+	background:url(../img/actDelete.png);
+	margin-left:30px;
+	postion:relative;
+	float:left;
+}
+.actModify:hover{
+	background:url(../img/actModifyHover.png);
+}
+.actDelete:hover{
+	background:url(../img/actDelHover.png);
+}

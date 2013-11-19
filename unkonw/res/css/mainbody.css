@@ -65,14 +65,10 @@
 /*mainbody*/
 .mainBody{
 	width:1000px;
-	height:auto;
+	height:800px;
 	margin:30px auto 0 auto;
 	background:#FFF;
 	border:solid 1px #c8c8c8;
-	background:url(../img/mainbodyBack.jpg) repeat-y;
-}
-.activity{
-	width:829px;
 }
 
 .footer{
